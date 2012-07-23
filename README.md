@@ -6,7 +6,9 @@ ARC enabled Xcode project templates for cocos2d-iphone, for both v1.x and v2.x b
 Use these templates to start a cocos2d iOS/Mac project with ARC enabled and with or without physics without having to read a lengthy "How to use cocos2d with ARC" tutorial. Of course you'll be missing out on Kobold2D (http://www.kobold2d.com) (hint, hint) but at least I got to mention it here and maybe it made you curious enough to follow the link.
 
 Exact cocos2d versions used:
+
 1.x ==> v1.1 beta 2
+
 2.x ==> v2.0 (stable)
 
 ========================
