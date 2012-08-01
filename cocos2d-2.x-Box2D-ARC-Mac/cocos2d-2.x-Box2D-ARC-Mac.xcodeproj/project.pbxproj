@@ -1880,6 +1880,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"\"cocos2d-2.x-Box2D-ARC-Mac/libs\"",
 					"\"cocos2d-2.x-Box2D-ARC-Mac/libs/kazmath/include\"",
@@ -1898,6 +1899,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"\"cocos2d-2.x-Box2D-ARC-Mac/libs\"",
 					"\"cocos2d-2.x-Box2D-ARC-Mac/libs/kazmath/include\"",

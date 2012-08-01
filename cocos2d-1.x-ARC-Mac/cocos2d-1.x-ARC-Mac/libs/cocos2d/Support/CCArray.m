@@ -106,7 +106,7 @@
 
 - (id) objectAtIndex:(NSUInteger)index
 {
-	NSAssert2( index < data->num, @"index out of range in objectAtIndex(%d), index %i", data->num, index );
+	NSAssert2( index < data->num, @"index out of range in objectAtIndex(%lu), index %lu", data->num, index );
 	
 	return data->arr[index];
 }
@@ -417,7 +417,7 @@ static inline NSInteger selectorCompare(id object1,id object2,void *userData){
 
 - (NSString*) description
 {
-	NSMutableString *ret = [NSMutableString stringWithFormat:@"<%@ = %08X> = ( ", [self class], self];
+	NSMutableString *ret = [NSMutableString stringWithFormat:@"<%@ = %p> = ( ", [self class], self];
 
 	for( id obj in self)
 		[ret appendFormat:@"%@, ",obj];

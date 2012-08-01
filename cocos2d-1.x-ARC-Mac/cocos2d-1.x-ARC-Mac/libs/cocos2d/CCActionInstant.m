@@ -255,7 +255,7 @@
 
 -(NSString*) description
 {
-	return [NSString stringWithFormat:@"<%@ = %08X | Tag = %i | target = %@ | selector = %@>",
+	return [NSString stringWithFormat:@"<%@ = %p | Tag = %li | target = %@ | selector = %@>",
 			[self class],
 			self,
 			tag_,
