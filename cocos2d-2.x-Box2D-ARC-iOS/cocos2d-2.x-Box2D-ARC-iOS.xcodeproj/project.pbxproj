@@ -1796,13 +1796,16 @@
 		DC16B9E71566A9CD004C3403 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cocos2d-2.x-Box2D-ARC-iOS/Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Box2D-ARC-iOS/libs/kazmath/include\"";
+				HEADER_SEARCH_PATHS = (
+					"\"cocos2d-2.x-Box2D-ARC-iOS/libs\"",
+					"\"cocos2d-2.x-Box2D-ARC-iOS/libs/kazmath/include\"",
+				);
 				INFOPLIST_FILE = "cocos2d-2.x-Box2D-ARC-iOS/Resources/Info.plist";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1817,12 +1820,15 @@
 		DC16B9E81566A9CD004C3403 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cocos2d-2.x-Box2D-ARC-iOS/Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Box2D-ARC-iOS/libs/kazmath/include\"";
+				HEADER_SEARCH_PATHS = (
+					"\"cocos2d-2.x-Box2D-ARC-iOS/libs\"",
+					"\"cocos2d-2.x-Box2D-ARC-iOS/libs/kazmath/include\"",
+				);
 				INFOPLIST_FILE = "cocos2d-2.x-Box2D-ARC-iOS/Resources/Info.plist";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1838,7 +1844,7 @@
 		DC16B9F61566AA15004C3403 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/cocos2d_library.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1847,26 +1853,32 @@
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"cocos2d-2.x-Box2D-ARC-iOS/libs\"",
+					"\"cocos2d-2.x-Box2D-ARC-iOS/libs/kazmath/include\"",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "./**";
 			};
 			name = Debug;
 		};
 		DC16B9F71566AA15004C3403 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/cocos2d_library.dst;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"cocos2d-2.x-Box2D-ARC-iOS/libs\"",
+					"\"cocos2d-2.x-Box2D-ARC-iOS/libs/kazmath/include\"",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "./**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -1646,7 +1646,7 @@
 		DC16BEB01566D039004C3403 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1667,7 +1667,7 @@
 		DC16BEB11566D039004C3403 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1688,7 +1688,7 @@
 		DC16BEBF1566D04F004C3403 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/cocos2d_library.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1698,27 +1698,29 @@
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Chipmunk-ARC-iOS/libs/kazmath/include\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "./**";
+				USER_HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Chipmunk-ARC-iOS/libs/Chipmunk/include/chipmunk\"";
 			};
 			name = Debug;
 		};
 		DC16BEC01566D04F004C3403 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/cocos2d_library.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Chipmunk-ARC-iOS/libs/kazmath/include\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "./**";
+				USER_HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Chipmunk-ARC-iOS/libs/Chipmunk/include/chipmunk\"";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

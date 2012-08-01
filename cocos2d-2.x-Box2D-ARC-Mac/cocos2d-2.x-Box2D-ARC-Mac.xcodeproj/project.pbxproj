@@ -1817,7 +1817,7 @@
 		DC086AA315BD973E0044A820 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1825,7 +1825,10 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cocos2d-2.x-Box2D-ARC-Mac/Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Box2D-ARC-Mac/libs/kazmath/include\"";
+				HEADER_SEARCH_PATHS = (
+					"\"cocos2d-2.x-Box2D-ARC-Mac/libs\"",
+					"\"cocos2d-2.x-Box2D-ARC-Mac/libs/kazmath/include\"",
+				);
 				INFOPLIST_FILE = "cocos2d-2.x-Box2D-ARC-Mac/Resources/Info.plist";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1840,7 +1843,7 @@
 		DC086AA415BD973E0044A820 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
@@ -1848,7 +1851,10 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cocos2d-2.x-Box2D-ARC-Mac/Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Box2D-ARC-Mac/libs/kazmath/include\"";
+				HEADER_SEARCH_PATHS = (
+					"\"cocos2d-2.x-Box2D-ARC-Mac/libs\"",
+					"\"cocos2d-2.x-Box2D-ARC-Mac/libs/kazmath/include\"",
+				);
 				INFOPLIST_FILE = "cocos2d-2.x-Box2D-ARC-Mac/Resources/Info.plist";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1863,7 +1869,7 @@
 		DC086AB715BD97750044A820 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1874,23 +1880,29 @@
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"cocos2d-2.x-Box2D-ARC-Mac/libs\"",
+					"\"cocos2d-2.x-Box2D-ARC-Mac/libs/kazmath/include\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "./**";
 			};
 			name = Debug;
 		};
 		DC086AB815BD97750044A820 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"cocos2d-2.x-Box2D-ARC-Mac/libs\"",
+					"\"cocos2d-2.x-Box2D-ARC-Mac/libs/kazmath/include\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "./**";
 			};
 			name = Release;
 		};
@@ -1913,6 +1925,7 @@
 				DC086AA415BD973E0044A820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC086AB615BD97750044A820 /* Build configuration list for PBXNativeTarget "cocos2d-library" */ = {
 			isa = XCConfigurationList;
@@ -1921,6 +1934,7 @@
 				DC086AB815BD97750044A820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

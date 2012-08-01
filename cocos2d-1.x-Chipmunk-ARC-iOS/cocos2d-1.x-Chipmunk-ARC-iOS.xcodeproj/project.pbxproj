@@ -1418,7 +1418,7 @@
 		DC087B2D15BDA2B40044A820 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1437,7 +1437,7 @@
 		DC087B2E15BDA2B40044A820 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1456,7 +1456,7 @@
 		DC087B3C15BDA6460044A820 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/cocos2d_library.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1470,14 +1470,14 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "./**";
+				USER_HEADER_SEARCH_PATHS = "\"cocos2d-1.x-Chipmunk-ARC-iOS/libs/Chipmunk/include/chipmunk\"";
 			};
 			name = Debug;
 		};
 		DC087B3D15BDA6460044A820 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/cocos2d_library.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1486,7 +1486,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "./**";
+				USER_HEADER_SEARCH_PATHS = "\"cocos2d-1.x-Chipmunk-ARC-iOS/libs/Chipmunk/include/chipmunk\"";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1510,6 +1510,7 @@
 				DC087B2E15BDA2B40044A820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC087B3B15BDA6460044A820 /* Build configuration list for PBXNativeTarget "cocos2d-library" */ = {
 			isa = XCConfigurationList;
@@ -1518,6 +1519,7 @@
 				DC087B3D15BDA6460044A820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
