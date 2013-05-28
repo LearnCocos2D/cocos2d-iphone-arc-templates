@@ -1,3 +1,17 @@
+These templates are no longer maintained!
+
+To get your ARC cocos2d hat on, walk through the first part of this tutorial (or continue to the end and you'll have a Storyboard-enabled cocos2d project as well):
+http://www.koboldtouch.com/display/IDCAR/Cocos2D+v2.1+and+Storyboards+Done+Right#Cocos2Dv2.1andStoryboardsDoneRight-CreateanARC-enabledCocos2DProject
+
+Or start a new project with Kobold2D (free):
+http://www.kobold2d.com
+
+Or even better, sign up for KoboldTouch and you'll get tons of extra features cocos2d users can only dream of:
+http://www.koboldtouch.com/display/KTD/Features
+
+
+
+============================
 cocos2d-iphone-arc-templates
 ============================
 
